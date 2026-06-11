@@ -1,13 +1,19 @@
 package com.portal;
 
-/**
- * Hello world!
- *
- */
-public class Main 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+import com.portal.ui.MainWindow;
+import javax.swing.SwingUtilities;
+
+
+
+public class Main {
+
+    public static void main( String[] args ) {
+
+        SwingUtilities.invokeLater( () -> {
+            MainWindow window = new MainWindow();
+            window.show();
+        } );
+
     }
+
 }
